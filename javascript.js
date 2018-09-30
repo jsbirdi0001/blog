@@ -87,3 +87,18 @@ setInterval(function(){
 	$(".bottom").css("background-image",backgroundUrl);
 	
 },3000);
+
+$("#blog img").mouseenter(function(){
+	$(this).css({
+		transform: "scale(1.3)",
+		filter: "brightness(125%)"
+	});
+	
+})
+$("#blog img").mouseleave(function(){
+	$(this).css({
+		transform: "scale(1)",
+		filter: "brightness(100%)"
+	});
+
+})

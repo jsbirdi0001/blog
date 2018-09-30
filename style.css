@@ -57,6 +57,8 @@
     font-family: Roboto;
     margin-bottom: 40px;
     transition: 1s;
+	-transition-duration: 1s;
+	-webkit-transition-duration: 1s;
 }
 .jumbotron h1, .jumbotron p{
 	box-sizing: border-box;
@@ -200,7 +202,7 @@
     z-index: 1; /* Sit on top */
     padding-top: 40px; /* Location of the box */
     left: 0;
-    top: 0;
+    top: 50px;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
@@ -249,12 +251,13 @@
 /* The Close Button */
 .close {
     position: absolute;
-    top: 15px;
+    top: 25px;
     right: 35px;
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
+    z-index: 99;
 }
 
 .close:hover,
@@ -274,6 +277,8 @@
 	background-position: center;
 	box-sizing: border-box;
 	transition: 1s;
+	-transition-duration: 1s;
+	-webkit-transition-duration: 1s;
 }
 .bottom h1{
 	font-family: 'Grand Hotel';
@@ -283,11 +288,13 @@
 }
 
 .image-1{
-	background-image: url("Images/img15.jpg");
+	background-image: url("Images/img14.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	transition: 0.4s;
+	-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
 	overflow: hidden;
 }
 .image-1:hover{
@@ -301,6 +308,8 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	transition: 0.4s;
+	-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
 	overflow: hidden;
 }
 .image-2:hover{
@@ -314,6 +323,8 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	transition: 0.4s;
+	-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
 	overflow: hidden;
 }
 .image-3:hover{
@@ -364,4 +375,67 @@ body{
 	background-position: center;
 	background-attachment: fixed;
 }
+
+
+#blog img{
+	transition: 0.25s;
+	overflow: hidden;
+	border-radius: 20px;
+}
+#blog div{
+	overflow: hidden;
+}
+
 /*background-color: rgba(240,240,240);*/
+.buyImg{
+	position:absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	padding: 20px;
+	border-radius: 5px;
+	color: white;
+	background: rgba(40,80,255,0.5);
+	cursor: pointer;
+}
+.buyImg:hover{
+	background: rgba(40,80,255,1);
+}
+.modal-backdrop{
+	position: none;
+	display: none;
+}
+
+/*heading of modal*/
+#exampleModalLabel{
+	font-style: italic;
+	color: tomato;
+	border-bottom: 1px solid lightgray;
+	padding-bottom: 15.0px;
+	width: 100%;
+	text-align: center;
+
+}
+
+/*login modal*/
+.login{
+	margin-right: 5px;
+	margin-top: 10px;
+}
+.login input[type="text"], .login input[type="email"], .login input[type="password"]{
+	width: 100%;
+	padding: 10px;
+	padding-bottom: 6px;
+	padding-top: 6px;
+	border: 2px solid lightgray;
+	border-radius: 3px;
+	margin-bottom: 5px;
+}
+.br{
+ 	border-right: 2px solid lightgray;
+}
+.bl{
+	border-left: 2px solid lightgray;
+}
